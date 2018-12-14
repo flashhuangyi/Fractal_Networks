@@ -1,14 +1,15 @@
 #coding=utf-8
 
-from math import *
-from networkx import *
 import random
+import networkx as nx
+import itertools
+import math
+import numpy as np
 from copy import deepcopy
 import os, sys
 import time
-import matplotlib.pyplot as plt
 
-def fractal_model(generation,m,x,e):
+def fractal_model(generation,n,m,e):
 	'''
 	Returns the fractal model introduced by 
 	Gallos L K, Song C M, Havlin S and Makse H A in PNAS 2007.
